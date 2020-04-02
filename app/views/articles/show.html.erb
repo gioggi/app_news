@@ -1,0 +1,18 @@
+<div class="container">
+  <h1>Article of <%= @article.user.name %></h1>
+  <%= form_for @article, :html => {:class => "form-horizontal center"} do |f| %>
+    <div class="form-group">
+      <%= f.label :title, "Title", class: "col-md-4 control-label" %>
+      <div class="col-md-8">
+        <%= f.text_field :title, class: "form-control", required: true, disabled: true %>
+      </div>
+    </div>
+    <div class="form-group">
+      <%= f.label :text, "Text", class: "col-md-4 control-label" %>
+      <div class="col-md-8">
+        <%= f.text_area :text, class: "form-control", required: true, disabled: true %>
+      </div>
+    </div>
+  <% end %>
+  <%= link_to("Back articles", articles_path, class: 'btn btn-default btn-info') %>
+</div>

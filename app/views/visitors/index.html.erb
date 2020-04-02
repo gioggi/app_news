@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <h1>App "News"
+      <% if current_user.present? %><span class="badge badge-secondary">Logged</span>
+      <% end %></h1>
+  </div>
+  <div class="card-deck">
+    <% if !current_user.present? %>
+      <%= link_to('Sign in', new_user_session_path, class: 'btn btn-lg btn-info btn-block') %>
+    <% else %>
+      <%= link_to('Sign out', destroy_user_session_path, method: :delete, class: 'btn btn-lg btn-danger btn-block') %>
+    <% end %>
+    <%= link_to('Articles', articles_path, class: 'btn btn-lg btn-info btn-block') %>
+    <%= link_to('Products table', '/static/products_table', class: 'btn btn-lg btn-info btn-block') %>
+    <%= link_to('Ex from 1 to 6 ', ' https://repl.it/@espositogiovann/DefiantGreatTransversal', class: 'btn btn-lg btn-info btn-block') %>
+
+  </div>
+</div>

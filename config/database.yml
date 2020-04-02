@@ -1,0 +1,22 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  username: postgres
+  # For details on connection pooling, see Rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+  password:
+  timeout: 5000
+  host: db
+
+development:
+  <<: *default
+  database: news_dev
+
+production:
+  <<: *default
+  database: news_prod
+
+test:
+  <<: *default
+  database: news_test
