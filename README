@@ -1,0 +1,16 @@
+Rails Bootstrap
+========================
+
+This application was generated with the rails_apps_composer gem:
+https://github.com/RailsApps/rails_apps_composer
+provided by the RailsApps Project:
+http://railsapps.github.io/
+
+________________________
+
+Command:
+    - docker-compose build #this build the solution
+    - docker-compose run web rails db:setup #this create db and run seeds
+    - docker-compose up #this run the solution
+
+Go to port 3000 of localhost!
