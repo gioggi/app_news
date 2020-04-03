@@ -3,7 +3,7 @@ h1. Rails App
 h4. Command:
 * docker-compose build #this command build the solution
 * docker-compose run web rails db:setup #this command create db and run seeds
-* docker-compose up #this command un the solution
+* docker-compose up #this command up the solution
 * docker-compose run web rspec #this command run rspec
 
 h4. Go to port 3000 of localhost!
